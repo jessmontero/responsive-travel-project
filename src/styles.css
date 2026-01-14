@@ -164,7 +164,16 @@ main p {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 footer {
@@ -234,5 +243,13 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 24px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
